@@ -10,6 +10,8 @@ import { ALL_COUNTRIES } from '../config';
 export const HomePage = ( {countries, setCountries} ) => {
   const [filteredCountries, setFilteredCountries] = useState(countries); 
 
+  // console.log('countries >>>', countries);
+
   const handleSearch = ((search, region) => {
     let data = [...countries];
 
